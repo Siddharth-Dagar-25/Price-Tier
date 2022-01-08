@@ -1,0 +1,113 @@
+    body {
+        background-color: #609aff;
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-family: 'open sans', sans-serif;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .panel {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px 20px;
+        width: 100%;
+        max-width: 940px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .pricing-plan {
+        border-bottom: 3px solid #e1f1ff;
+    }
+    
+    .pricing-plan:last-child {
+        border-bottom: none;
+    }
+    
+    .pricing-img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 25px;
+        max-width: 200px;
+        border: 2px black solid;
+    }
+    
+    .pricing-header {
+        color: #888;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    
+    .pricing-features {
+        color: #016ff9;
+        margin: 50px 0 25px;
+    }
+    
+    .pricing-features-item {
+        border-top: 2px solid #e1f1ff;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 25px 0;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .pricing-features-item:last-child {
+        border-bottom: 1px solid #e1f1ff;
+        padding: 10px 30px;
+    }
+    
+    .pricing-price {
+        display: block;
+        color: #016ff9;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .pricing-button {
+        border: 1px solid #9dd1ff;
+        outline-color: #348efe;
+        display: inline-block;
+        padding: 15px 35px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 25px 0;
+        transition: background-color 200ms ease-in-out;
+    }
+    
+    .pricing-button:hover,
+    .pricing-button:focus {
+        background-color: #e1f1ff;
+    }
+    
+    .pricing-button.is-featured {
+        background-color: #48aaff;
+        color: white;
+    }
+    
+    .pricing-button.is-featured:hover,
+    .pricing-button.is-featured:focus {
+        background-color: #269aff;
+        color: white;
+    }
+    
+    @media (min-width:900px) {
+        .panel {
+            flex-direction: row;
+        }
+        .pricing-plan {
+            border-right: 2px solid #e1f1ff;
+            border-bottom: none;
+            padding: 30px 10px;
+        }
+        .pricing-plan:last-child {
+            border-right: none;
+        }
+    }
